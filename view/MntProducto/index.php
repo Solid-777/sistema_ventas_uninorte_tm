@@ -28,7 +28,7 @@
     <meta name="description" content="Premium Quality and Responsive UI for Dashboard.">
     <meta name="author" content="ThemePixels">
 
-    <title>Bracket Responsive Bootstrap 4 Admin Template</title>
+    <title>Sistema ventas Uninorte</title>
 
     <!-- vendor css -->
     <link href="../../public/lib/font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -687,6 +687,35 @@
       <div class="br-pagebody">
 
         <!-- start you own content here -->
+          <div class="br-section-wrapper">
+          <h6 class="tx-gray-800 tx-uppercase tx-bold tx-14 mg-b-10">Mantenimiento de productos</h6>
+          <!-- <p class="mg-b-25 mg-lg-b-50">Searching,.</p> -->
+
+          <div class="table-wrapper">
+            <table id="datatable1" class="table display responsive nowrap">
+              <thead>
+                <tr>
+                  <th class="wd-15p">Nombre Producto</th>
+                  <th class="wd-15p">Acción</th>
+                  <th class="wd-20p">Acción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Gaseosa CocaCola 2L</td>
+                  <td><button class=" btn btn-primary">editar</button></td>
+                  <td><button class=" btn btn-danger">eliminar</button></td>
+                 
+                </tr>
+                 <tr>
+                  <td>Botella agua 2L</td>
+                  <td><button class=" btn btn-outline-primary btn-icon"><div class="fa fa-edit"></div></button></td>
+                  <td><button class=" btn btn-outline-danger btn-icon"><div class="fa fa-trash"></div></button></td>
+                 
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- table-wrapper -->
 
       </div><!-- br-pagebody -->
 
