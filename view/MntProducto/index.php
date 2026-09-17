@@ -701,7 +701,7 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                <!-- <tr>
                   <td>Gaseosa CocaCola 2L</td>
                   <td><button class=" btn btn-primary">editar</button></td>
                   <td><button class=" btn btn-danger">eliminar</button></td>
@@ -712,7 +712,7 @@
                   <td><button class=" btn btn-outline-primary btn-icon"><div class="fa fa-edit"></div></button></td>
                   <td><button class=" btn btn-outline-danger btn-icon"><div class="fa fa-trash"></div></button></td>
                  
-                </tr>
+                </tr> -->
               </tbody>
             </table>
           </div><!-- table-wrapper -->
