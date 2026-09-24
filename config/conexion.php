@@ -1,27 +1,41 @@
 <?php
-class conectar {
-    protected  $dbh;
-    public function conexion(){
-            try{
-                 $this->dbh = new PDO(
-                    "mysql:host=localhost;dbname;charset=utf8",
-                    "root",
-                    "",
-                    [
-                        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
-                    ]
-                );
-                echo "conexion exitosa a la base de datos";
-                return $this->dbh;
-            }catch(Exeption $e){
-                echo "error DB:".$e->getMessage();
-                die();
-            }
+
+// Clase encargada de realizar la conexión con la base de datos
+class Conectar
+{
+    // Variable que almacenará la conexión PDO
+    protected $dbh;
+
+    // Método para establecer la conexión
+    protected function Conexion()
+    {
+        try {
+            // Crea una nueva conexión con MySQL mediante PDO
+            $this->dbh = new PDO(
+                "mysql:host=localhost;dbname=ventas",
+                "root",
+                ""
+            );
+
+            // Retorna la conexión establecida
+            return $this->dbh;
+
+        } catch (Exception $e) {
+
+            // Muestra el mensaje si ocurre un error de conexión
+            print "Error BD: " . $e->getMessage() . "<br/>";
+
+            // Detiene la ejecución del programa
+            die();
+        }
     }
-    public function set_names(){
-        return $this->dbh->query("SET NAME'utf8'");
+
+    // Método para configurar la codificación de caracteres
+    public function set_names()
+    {
+        // Establece la codificación UTF-8 para la conexión
+        return $this->dbh->query("SET NAMES 'utf8'");
     }
 }
-$conexion = new conectar;
-$conexion->Conexion();
+
 ?>
